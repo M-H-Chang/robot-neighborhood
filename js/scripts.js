@@ -13,6 +13,12 @@ function identifyOne(number) {
     if (element === "1") {
 
       console.log("beep")
+    } else if (element === "2") {
+
+    } else if (element === "3") {
+
+    } else {
+      element === element
     }
   });
 }
