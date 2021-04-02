@@ -7,11 +7,9 @@ const num3Logic = "Won't you be my neighbor?"
 
 // -----Business Logic-----
 function identifyOne(number) {
+  const numArray = number.toString().split("");
   const newArray = [];
-  const numArray = number.split("");
   for (let i = 0; i < numArray.length; i++)
-
-
     if (numArray[i] === logicNumbers[0]) {
       newArray.push(num1Logic)
     } else if (numArray[i] === logicNumbers[1]) {
@@ -20,7 +18,7 @@ function identifyOne(number) {
       newArray.push(num3Logic);
     } else {
       newArray.push(numArray[i]);
-    }
+    } return newArray;
 }
 
 // -----User Interface Logic-----
