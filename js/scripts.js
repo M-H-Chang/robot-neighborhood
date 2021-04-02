@@ -1,6 +1,7 @@
 // -----Utility Logic-----
 const logicNumbers = ["1", "2", "3"]
 const num1Logic = "Beep!";
+const num2Logic = "Boop!";
 // const firstNumber = "1";
 // const secondNumber = "2";
 // const thirdNumber = "3";
@@ -12,11 +13,13 @@ function identifyOne(number) {
   for (let i = 0; i < numArray.length; i++)
     if (numArray[i] === logicNumbers[0]) {
       newArray.push(num1Logic)
+    } else if (numArray[i] === logicNumbers[1]) {
+      newArray.push(num2Logic);
+    }
 
-    } else {
+    else {
       newArray.push(numArray[i]);
     } console.log(newArray)
-
 }
 
 // numArray.forEach(function (element) {
