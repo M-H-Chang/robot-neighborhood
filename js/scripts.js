@@ -2,9 +2,8 @@
 const logicNumbers = ["1", "2", "3"]
 const num1Logic = "Beep!";
 const num2Logic = "Boop!";
-// const firstNumber = "1";
-// const secondNumber = "2";
-// const thirdNumber = "3";
+const num3Logic = "Won't you be my neighbor?"
+
 
 // -----Business Logic-----
 function identifyOne(number) {
@@ -15,30 +14,18 @@ function identifyOne(number) {
       newArray.push(num1Logic)
     } else if (numArray[i] === logicNumbers[1]) {
       newArray.push(num2Logic);
-    }
-
-    else {
+    } else if (numArray[i] === logicNumbers[2]) {
+      newArray.push(num3Logic);
+    } else {
       newArray.push(numArray[i]);
-    } console.log(newArray)
+    }
 }
-
-// numArray.forEach(function (element) {
-//   if (element === "1") {
-
-//     console.log("beep")
-//   } else if (element === "2") {
-
-//   } else if (element === "3") {
-
-//   } else {
-//     element === element
-//   }
-// });
 
 // -----User Interface Logic-----
 $("document").ready(function () {
   $("#form").submit(function (event) {
     event.preventDefault();
     const num = parseInt($("#input").val());
+    $("#results").html(identifyOne(num));
   })
 })
