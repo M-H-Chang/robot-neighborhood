@@ -4,8 +4,17 @@ const num1Logic = "Beep!";
 const num2Logic = "Boop!";
 const num3Logic = "Won't you be my neighbor?"
 
+function notNumber(number) {
+  if (isNaN(number)) {
+    return alert("Please enter a number!");
+  }
+}
+
 // -----Business Logic-----
 function identify(number) {
+  if (notNumber(number)) {
+    return 0;
+  }
   const numArray = number.toString().split("");
   const newArray = [];
   for (let i = 0; i < numArray.length; i++)
@@ -19,6 +28,7 @@ function identify(number) {
       newArray.push(numArray[i] + ", ");
     } return newArray;
 }
+
 
 // -----User Interface Logic-----
 $("document").ready(function () {
