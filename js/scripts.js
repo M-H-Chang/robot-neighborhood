@@ -4,11 +4,6 @@ const num1Logic = "Beep!";
 const num2Logic = "Boop!";
 const num3Logic = "Won't you be my neighbor?"
 
-// function submitForm() {
-//   const frm
-// }
-
-
 // -----Business Logic-----
 function identify(number) {
   const numArray = number.toString().split("");
@@ -32,6 +27,5 @@ $("document").ready(function () {
     const num = parseInt($("#input").val());
     const userInput = identify(num)
     $("#results").html(userInput);
-
   })
 })
