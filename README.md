@@ -57,7 +57,7 @@ _There is no extra servers or databases that need to be ran. The files in this c
 
 ## Known Bugs
 
-* _Currently you can submit letters into the input and it will return NAN._
+* _No known bugs._
 
 ## License
 

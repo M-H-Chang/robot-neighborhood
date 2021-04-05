@@ -29,7 +29,6 @@ function identify(number) {
     } return newArray;
 }
 
-
 // -----User Interface Logic-----
 $("document").ready(function () {
   $("#form").submit(function (event) {
