@@ -1,10 +1,19 @@
 Specs
 
-Describe identifyOne()
+Describe identify()
 
 Test: It should return an array of numbers.
-Code: identifyOne("564")
+Code: identify("564")
 Expected Output: ["5", "6", "4"]
+
+Test: It should loop through each numnber and print out the following numbers into a string.
+Code: identify(5);
+Expected Output: ["1", "2", "3", "4", "5"]
+
+Test: It should return Beep for 1 boop for 2 and won't you be my neighbor for 3 and pring out the other numbers."
+Code: idenfity(4);
+Expected Output: ["beep", "boop", "won't you be my neighbor", "4"];
+
 
 Test: If a number is 1 replace it with "Beep!"
 Code: identifyOne("1")

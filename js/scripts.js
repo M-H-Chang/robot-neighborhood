@@ -15,18 +15,29 @@ function identify(number) {
   if (notNumber(number)) {
     return 0;
   }
-  const numArray = number.toString().split("");
   const newArray = [];
-  for (let i = 0; i < numArray.length; i++)
-    if (numArray[i] === logicNumbers[0]) {
-      newArray.push(num1Logic + ", ")
-    } else if (numArray[i] === logicNumbers[1]) {
-      newArray.push(num2Logic + ", ");
-    } else if (numArray[i] === logicNumbers[2]) {
-      newArray.push(num3Logic + ", ");
+  for (let i = 0; i <= number; i++) {
+    if (i.toString().includes("3")) {
+      newArray.push("won't you be by neighbor")
+    } else if (i.toString().includes("2")) {
+      newArray.push("beep!")
+    } else if (i.toString().includes("1")) {
+      newArray.push("boop")
     } else {
-      newArray.push(numArray[i] + ", ");
-    } return newArray;
+      newArray.push(i)
+    }
+  }
+
+
+  // if (numArray[i] === logicNumbers[0]) {
+  //   newArray.push(num1Logic + ", ")
+  // } else if (numArray[i] === logicNumbers[1]) {
+  //   newArray.push(num2Logic + ", ");
+  // } else if (numArray[i] === logicNumbers[2]) {
+  //   newArray.push(num3Logic + ", ");
+  // } else {
+  //   newArray.push(numArray[i] + ", ");
+  // } return newArray;
 }
 
 // -----User Interface Logic-----
