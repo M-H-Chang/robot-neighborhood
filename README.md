@@ -2,30 +2,21 @@ Specs
 
 Describe identify()
 
-Test: It should return an array of numbers.
+Test: It should return an array of numbers starting from 0.
 Code: identify("3")
-Expected Output: ["1", "2", "3"]
+Expected Output: ["0", "1", "2", "3"]
 
 Test: It should loop through each numnber and print out the following numbers into a string.
 Code: identify(5);
 Expected Output: ["1", "2", "3", "4", "5"]
 
-Test: It should return Beep for 1 boop for 2 and won't you be my neighbor for 3 and pring out the other numbers."
+Test: It should return Beep for 1 boop for 2 and won't you be my neighbor for 3 and print out the other numbers."
 Code: idenfity(4);
 Expected Output: ["beep", "boop", "won't you be my neighbor", "4"];
 
-Test: If a number is 1 replace it with "Beep!"
-Code: identifyOne("1")
-Expected Output: ["Beep!"]
-
-Test: It should return "Boop!" for the number 2.
-Code: identifyOne("2")
-Expected Output: ["Beep!", "Boop!"]
-
-Test: It should return "Won't you be my neighbor?" for the number 3.
-Code: identifyOne("4")
-Expected Output: ["Beep!", "Boop!", "Won't you be my neighbor?", "4"]
-
+Test: It should have a functionality in place for exceptions from 3 to 1 and the number should be replaced with the exception rules.
+Code: identify("12")
+Expected Output: ["0", "beep!", "boop", "won't you be my neighbor?", "4", "5", "6", "7", "8", "9", "beep!", "boop"]
 
 # _Mr. Roboger's Neighborhood_
 
